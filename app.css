@@ -272,6 +272,15 @@ body {
     transform: translateX(0);
 }
 
+.left-to-right {
+    transition: 1s;
+    transform: translateX(-150%);
+}
+
+.active .left-to-right {
+    transform: translateX(0);
+}
+
 .buttom-up {
     transition: 1s;
     transform: translateY(100vh);
@@ -295,4 +304,28 @@ body {
 
 .more-images-item:nth-child(4) {
     transition-delay: 0.8s;
+}
+
+.info-wrapper>div:nth-child(1) {
+    transition-delay: 0.2s;
+}
+
+.info-wrapper>div:nth-child(2) {
+    transition-delay: 0.4s;
+}
+
+.info-wrapper>div:nth-child(3) {
+    transition-delay: 0.6s;
+}
+
+.info-wrapper>div:nth-child(4) {
+    transition-delay: 0.8s;
+}
+
+.info-wrapper>div:nth-child(5) {
+    transition-delay: 1s;
+}
+
+.info-wrapper>div:nth-child(6) {
+    transition-delay: 1.2s;
 }
