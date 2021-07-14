@@ -336,7 +336,7 @@ body {
     z-index: 100;
     left: 0;
     top: 0;
-    padding-top: 10px;
+    padding-top: 100px;
     height: 100%;
     width: 100%;
     overflow: auto;
@@ -379,5 +379,89 @@ body {
     }
     to {
         transform: scale(1);
+    }
+}
+
+
+/* navbar */
+
+.navbar {
+    background-color: transparent;
+    padding: 10px 90px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    display: flex;
+}
+
+.navbar a {
+    float: left;
+    text-decoration: none;
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 900;
+    padding: 12px;
+}
+
+.navbar .logo {
+    font-size: 30px;
+    flex: 1;
+    color: var(--black);
+}
+
+.navbar-right a:hover {
+    color: var(--black);
+    border-bottom: 2px solid var(--black);
+}
+
+.navbar-right a.active {
+    color: var(--black);
+    border-bottom: 2px solid var(--black);
+}
+
+.navbar-right a {
+    transition: 0.5s;
+}
+
+.cart {
+    position: relative;
+}
+
+.cart i {
+    font-size: x-large;
+}
+
+.badge {
+    position: absolute;
+    top: 0;
+    right: 1px;
+    font-size: 12px;
+    background-color: var(--red);
+    width: 20px;
+    height: 20px;
+    padding: 2px;
+    text-align: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.bounce {
+    animation-name: bounce;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-50px);
+    }
+    100% {
+        transform: translateY(0);
     }
 }
