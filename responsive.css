@@ -1,0 +1,9 @@
+@media only screen and (max-width:1440px) {
+    .info-wrapper>.button {
+        padding-bottom: 14vh;
+    }
+    .button>button {
+        font-size: x-large;
+        padding: 14px 52px;
+    }
+}
